@@ -63,4 +63,4 @@ dbBook.delete(key)
 val keys = dbBook.getAllKeys()
 ```
 ## License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/rdnasim/expirydb/blob/main/LICENSE) file for details.
+This project is licensed under the Apache License - see the [LICENSE](https://github.com/rdnasim/expirydb/blob/main/LICENSE) file for details.
