@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
 }
 
 android {
@@ -43,4 +44,48 @@ dependencies {
 
     // paper db
     implementation 'io.github.pilgr:paperdb:2.7.2'
+}
+
+// JitPack specific configurations
+group = 'com.github.rdnasim' // Replace with your GitHub username
+version = '1.0.0' // Update with your desired version
+
+// Publishing configurations
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.github.rdnasim' // Replace with your GitHub username
+            artifactId = 'ExpiryDB' // Replace with your library's artifact ID
+            version = '1.0.0' // Update with your desired version
+
+            // Provide information about your library
+            pom {
+                name = 'ExpiryDB'
+                description = 'ExpiryDB is a lightweight Android library that provides storage operations with expiry time for objects using the Paper library.'
+                url = 'https://github.com/rdnasim/expirydb'
+
+                licenses {
+                    license {
+                        name = 'Apache-2.0' // License name
+                        url = 'https://www.apache.org/licenses/LICENSE-2.0.txt' // License URL
+                    }
+                }
+
+                developers {
+                    developer {
+                        id = 'rdnasim' // Your GitHub username
+                        name = 'Md Riadul Islam'
+                        email = 'iam.riadul@gmail.com'
+                    }
+                }
+            }
+        }
+    }
+
+    repositories {
+        maven {
+            // JitPack Maven repository URL
+            url 'https://jitpack.io'
+        }
+    }
 }
