@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="/assets/expiry_db_logo.png" alt="Logo of ExpiryDB">
+</p>
+
 # ExpiryDB
 
 ExpiryDB is a lightweight Android library that provides storage operations with expiry time for objects using the Paper library. It allows you to store and retrieve objects with an expiry time, automatically handling the expiration of stored objects.
