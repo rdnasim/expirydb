@@ -40,7 +40,7 @@ dependencyResolutionManagement {
     }
 }
 ```
-> Note: If you add this in `build.gradle` (project level), it won't work. You must add it in the `settings.gradle` instead.
+> **Note: If you add this in `build.gradle` (project level), it won't work. You must add it in the `settings.gradle` instead.**
 
 2. Add the ExpiryDB dependency to your app-level `build.gradle` file:
 
