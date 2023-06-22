@@ -56,7 +56,11 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.github.rdnasim' // Replace with your GitHub username
             artifactId = 'ExpiryDB' // Replace with your library's artifact ID
-            version = '1.0.0' // Update with your desired version
+            version = '1.0.2' // Update with your desired version
+
+            afterEvaluate {
+                from components.release
+            }
 
             // Provide information about your library
             pom {
