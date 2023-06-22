@@ -28,7 +28,7 @@ allprojects {
 2. Add the ExpiryDB dependency to your app-level `build.gradle` file:
 ```groovy
 dependencies {
-    implementation 'com.github.rdnasim:ExpiryDB:1.0.0'
+    implementation 'com.github.rdnasim:ExpiryDB:1.0.2'
 }
 ```
 ## Usage
